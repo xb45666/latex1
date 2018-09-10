@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\renewcommand{\baselinestretch}{1.0}
+\vspace{2ex}
+\begin{document}
+\begin{center}
+\large Homework 1\\
+\small Tianyu Shen
+\end{center}
+\renewcommand{\baselinestretch}{1.5}
+\scriptsize
+\begin{enumerate}
+\item In class we recalled that the general solution to the simple harmonic oscillator is:
+	\begin{center}
+	$x(t)=x_ocos\omega t+\frac{v_o}{\omega}sin\omega t={\alpha}_1
+	 e^{i\omega t}+{\alpha}_2 e^{-i\omega t}$\\
+	\end{center}
+	where $x_o = x(0)$ is the intial position and $v_o = \dot{x}(0)$ is the initial velocity.
+	\begin{enumerate}
+	\item Solve for  ${\alpha}_1$ and ${\alpha}_2$ in terms of $x_o$,$v_o$
+	\item Prove that one can write the general solution as $x(t) = A cos(\omega t + \theta )$
+ 	,where A and $\delta$ are real constants.
+	\item Prove the following:
+	\end{enumerate}
+	\begin{center}
+	$A=\sqrt{x_o^2}+\frac{v_o^2}{{\omega}^2}$ \qquad\qquad $\delta = -arctan(\frac{v_o}{\omega x_o})$
+	\end{center}
+\item Consider the following Hamiltonian:
+	\begin{center}
+	$H=\frac{p^2}{2m}+\frac{1}{2}\gamma x^2+\frac{1}{4}\alpha x^4$
+	\end{center}
+	where $\gamma$ and $\alpha$ are both positive. Please derive an equation for the following observables to second order in temperature, and sketch each observable as a function of temperature for $\alpha = 0$ and a small value of $\alpha$ (a literal sketch is fine):
+	\begin{enumerate}
+	\item The mean square displacement$ \langle x^2 \rangle. $
+	\item The heat capacity
+	\end{enumerate}
+\item Now we will consider a more general Hamiltonian which does have a cubic term: The LJ potential for a dimer (i.e. a pair of atoms, like $N_2$ or $O_2$ molecules).
+	\begin{center}
+	$v(r)=\epsilon[(\frac{a_o}{r})^{12}-2(\frac{a_o}{r})^{6}]$\\
+	$\approx -\epsilon + \frac{1}{2}\ddot{v}(a_o)(r-a_o)^2+ \frac{1}{6}\dddot{v}(a_o)(r-a_o)^2+ \frac{1}{24}\ddddot{v}(a_o)(r-a_o)^2$
+	\end{center}
+	\begin{enumerate}
+	\item Perform the Taylor series expansion up to 4th order about the minumum of r = $a_o$, deriving an equation for$\ddot{v},\dddot{v},\ddddot{v}$ in terms of $\epsilon\;and \;a_o$. Below is a picture of the expansion up to second order, up to third order, and up to fourth order.
+	\item Derive an analytic expression for $\langle x \rangle$, retaining only the leading order term in temper- ature. Please make note of the sign of the prefactor (i.e. does the dimer expand or shrink with temperature?).
+	\item Perform molecular dynamics using $ a_o = 1$ and $\epsilon = 1 $ and please measure$ \langle x \rangle $for increasing energies (which is set by the initial displacement, for example). Plot$ \langle x \rangle $ as a function of temperature (or energy), and determine if your measurement is consistent with your perturbation theory results from your previous derivation.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
